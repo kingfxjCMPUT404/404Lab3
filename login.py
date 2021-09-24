@@ -12,11 +12,6 @@ password = form.getvalue('password')
 if secret.username == username and secret.password == password:
     print("Set-Cookie: username = %s;" % username)
     print("Set-Cookie: password = %s;" % password)
-    print("Set-Cookie: Domain = http://localhost:8080/get_data_from_form.py;")
-else:
-    print("Set-Cookie: username = ;")
-    print("Set-Cookie: password = ;")
-    print("Set-Cookie: Domain = ;")
 
 print("Content-type: text/html\r\n\r\n")
 print("<html>")
